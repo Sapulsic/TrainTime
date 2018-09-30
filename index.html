@@ -3,16 +3,112 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Train Time</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Normalize & Style CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+
 </head>
 <body>
     
+        <div class="uk-cover-container">
+            <img src="assets/images/TrainTracksBG.jpg" alt="" uk-cover>
+        </div>
+
+        <div id="mainContainer" class="uk-container uk-background-secondary uk-flex uk-flex-center">
+                <h1 id="trainTimeHero" class="uk-heading-hero">Train Time</h1>
+        </div>
+
+        <div id="trainSchedule" class="uk-container uk-card uk-background-muted uk-flex uk-flex-center uk-flex-column">
+            <h3 class="uk-h1">Current Train Schedule</h3>
+
+            <table class="uk-table uk-table-hover uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+        </div>
+
+        <div id="addTrain" class="uk-container uk-card uk-background-muted uk-flex uk-flex-center uk-flex-column">
+            <h3 class="uk-h1">Add Train</h3>
+
+            <form id="formTrain">
+                    <fieldset id="formField" class="uk-fieldset ">
+                
+                        <legend class="uk-legend">Train Name</legend>
+                
+                        <div class="uk-margin">
+                            <input id="train-name" class="uk-input" type="text">
+                        </div>
+                
+                        <legend class="uk-legend">Destination</legend>
+
+                        <div class="uk-margin">
+                            <input  id="trainDestination" class="uk-input" type="text">
+                        </div>
+
+                        <legend class="uk-legend">First Train Time (HH:mm - Military Time)</legend>
+
+                        <div class="uk-margin">
+                            <input id="trainTime" class="uk-input" type="text">
+                        </div>
+
+                        <legend class="uk-legend">Frequency (min)</legend>
+
+                        <div class="uk-margin">
+                            <input id="trainFreq" class="uk-input" type="text">
+                        </div>
+                
+                    </fieldset>
+                </form>
+
+        </div>
+
+        
 
 
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
 
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+    <script src="assets/javascript/main.js"></script>
 
-    <script src="assets/javascript.main.js"></script>
 </body>
 </html>
