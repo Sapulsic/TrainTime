@@ -47,9 +47,17 @@ var config = {
     var trainTime = trainSnapshot.val().time;
     var trainFreq = trainSnapshot.val().freq;
     
+    // var trainRemainingTime = 
+
+    $("#formTrain > tbody").append(
+      $("<td>").text(trainName),
+      $("<td>").text(trainDest),
+      $("<td>").text(trainTime),
+      $("<td>").text(trainFreq),
+      $("<td>").text()
+    );
 
 
-    
   }, function (errorObject) {
     console.log("Errors handled: " + errorObject.code);
 });
