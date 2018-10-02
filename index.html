@@ -39,25 +39,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                        </tr>
-                        <tr>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                        </tr>
-                        <tr>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
+                            <td id="tNameDisplay"></td>
+                            <td id="tDestinationDisplay"></td>
+                            <td id="tFreqDisplay"></td>
+                            <td id="tNextArrivalDisplay"></td>
+                            <td id="tMinDisplay"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -91,11 +77,11 @@
                         <legend class="uk-legend">Frequency (min)</legend>
 
                         <div class="uk-margin">
-                            <input id="trainFreq" class="uk-input" type="text">
+                            <input id="trainFreq" class="uk-input" type="number">
                         </div>
 
                         <div class="uk-margin">
-                            <button id="trainSubmit" class="uk-button uk-button-default">Submit</button>
+                            <button id="trainSubmit" class="uk-button uk-button-default" value="Submit">Submit</button>
                         </div>
                     </fieldset>
                 </form>
