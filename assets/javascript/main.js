@@ -54,9 +54,9 @@
     var trainRow = $("<tr>").append(
       $("<td>").text(trainName),
       $("<td>").text(trainDest),
+      $("<td>").text(trainFreq),
       $("<td>").text(trainTime),
-      // $("<td>").text(trainArrival),
-      $("<td>").text(trainFreq)
+      // $("<td>").text(trainArrival)
     );
     $("#tableTrain > tbody").append(trainRow);
       
