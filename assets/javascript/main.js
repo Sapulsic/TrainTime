@@ -21,9 +21,12 @@
     
     var trainName = $('#trainName-input').val().trim();
     var trainDest = $('#trainDestination-input').val().trim();
-    var trainTime = moment(($('trainTime-input')).val(), "hh:mm a").format('HH');
+    var trainTime = moment($('#trainTime-input').val().trim(), "hh:mm a").format('HH mm');
     var trainFreq = $('#trainFreq-input').val().trim();
     
+
+    console.log(trainTime)
+
     var  newTrain = {
       name: trainName,
       dest: trainDest,
@@ -48,13 +51,14 @@
     
     // var trainRemainingTime = 
     
-    $("#formTrain > tbody").append(
+    var trainRow = $("<tr>").append(
       $("<td>").text(trainName),
       $("<td>").text(trainDest),
       $("<td>").text(trainTime),
-      $("<td>").text(trainArrival),
+      // $("<td>").text(trainArrival),
       $("<td>").text(trainFreq)
     );
+    $("#tableTrain > tbody").append(trainRow);
       
       
     }, function (errorObject) {
