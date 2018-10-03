@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Train Time</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/PNG" href="assets/images/TrainIcon.png">
 
     <!-- Normalize & Style CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/normalize.css" />
@@ -56,27 +57,27 @@
             <form id="formTrain">
                     <fieldset id="formField" class="uk-fieldset ">
                 
-                        <legend class="uk-legend">Train Name</legend>
-                
+                        
                         <div class="uk-margin">
+                            <legend class="uk-legend">Train Name</legend>
                             <input id="trainName-input" class="uk-input" type="text">
                         </div>
                 
-                        <legend class="uk-legend">Destination</legend>
-
+                        
                         <div class="uk-margin">
+                            <legend class="uk-legend">Destination</legend>
                             <input  id="trainDestination-input" class="uk-input" type="text">
                         </div>
 
-                        <legend class="uk-legend">First Train Time (HH:mm - Military Time)</legend>
-
+                        
                         <div class="uk-margin">
-                            <input id="trainTime-input" class="uk-input" type="text">
+                            <legend class="uk-legend">First Train Time</legend>
+                            <input id="trainTime-input" class="uk-input" type="time">
                         </div>
 
-                        <legend class="uk-legend">Frequency (min)</legend>
-
+                        
                         <div class="uk-margin">
+                            <legend class="uk-legend">Frequency (min)</legend>
                             <input id="trainFreq-input" class="uk-input" type="number">
                         </div>
 
@@ -87,19 +88,17 @@
                 </form>
         </div>
 
-        
-
+          
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
 
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
 
     <!-- Moment.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/af.js"></script>
-
-    <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+            
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
