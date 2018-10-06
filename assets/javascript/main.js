@@ -49,16 +49,20 @@
     var trainTime = trainSnapshot.val().time;
     var trainFreq = trainSnapshot.val().freq;
     
-  var trainRemainingTime = moment().diff(moment.unix(trainTime, "X"), "hours");
-  var trainArrival = trainRemainingTime - trainFreq;
-  console.log(trainArrival);
+    var firstTrain = moment(trainTime, "hh:mm").subtract(1, "years");
+
+    var diffTrain = moment().diff(moment(firstTrain), "minutes");
+    var trainRemainder = diffTrain % trainFreq;
+    var trainAway = trainFreq - trainRemainder;
+    var trainNext = moment().add(trainAway, "minutes").format("hh:mm A");
+
 
     var trainRow = $("<tr>").append(
       $("<td>").text(trainName),
       $("<td>").text(trainDest),
       $("<td>").text(trainFreq),
-      $("<td>").text(trainTime),
-      $("<td>").text(trainArrival)
+      $("<td>").text(trainNext),
+      $("<td>").text(trainAway)
     );
     $("#tableTrain > tbody").append(trainRow);
       
