@@ -4,7 +4,7 @@
 
 #### Check it out [here](https://sapulsic.github.io/TrainTime/).
 
-![screenshot](assets/images/TrainTime1)
+![screenshot](assets/images/TrainTime1.png)
 
 
 ## Technologies Used
